@@ -109,7 +109,7 @@ def checkAnswer(user_message):
     global noUnderstandCounter
 
     stringAfterCleaning = removeUselessWords(user_message)
-    ######################boto do handeling swear words ###########################
+    ######################boto do handeling swear words #########################
 
     if swearCounter == 2:
         return 'boto is mad at you, and not talking to you any more!', 'crying'
