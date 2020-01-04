@@ -54,10 +54,8 @@ def searchWiki(user_message):
         return 'Sorry could not find this in wikipedia'
     else:
         article = responseJson['query']['pages'][key[0]]['extract']
-        # print(responseJson['query']['pages'][key[0]]['extract'])
         index = article.find('.')
         article = article[:index+1]
-        # print(article)
         return article
 
 
@@ -86,8 +84,7 @@ def talkingAboutBoto(user_message):
 
 
 def getWeather(user_message):
-    #user_message = removeUselessWords(user_message)
-
+    # replace with weather api key provided in the comments of the hive
     api_key = keys.weatherMapApiKey
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     city_name = user_message
@@ -145,4 +142,4 @@ def checkAnswer(user_message):
             noUnderstandCounter = -1
         else:
             noUnderstandCounter += 1
-        return words.boto_notUnderstand[noUnderstandCounter], 'confused'
+        return words.boto_notUnderstand[noUnderstandCounter] + 'actually, I am not that smart, Try to ask me things like: "what is dog" , I will search wikipedia for you, or "what is the weather in tel aviv" , I will search the weather for you', 'confused'
