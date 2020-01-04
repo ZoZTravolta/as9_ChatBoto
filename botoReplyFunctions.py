@@ -61,12 +61,11 @@ def searchWiki(user_message):
         return article
 
 
-#searchWiki(cleanString('what is a ffff?'))
-
-
 def handleQuestions(user_message):
+    if 'your dog' in user_message or 'i ' in user_message:
+        return 'the name of my dog is "bobo"', 'dog'
     if 'you' in user_message:
-        return talkingAboutBoto(user_message), 'inlove'
+        return talkingAboutBoto(user_message), 'excited'
     if 'me' in user_message or 'i ' in user_message:
         return talkingAboutUser(user_message), 'inlove'
     if 'weather' in user_message:
@@ -132,7 +131,9 @@ def checkAnswer(user_message):
 
     if 'joke' in user_message:
         return getJoke(), 'giggling'
-
+    ######################boto python ###########################
+    if 'python' in user_message or 'i ' in user_message:
+        return "i'm afraid of snakes", 'afraid'
     ######################boto handels questions ###########################
 
     if user_message.endswith('?') or any(word in words.questions for word in user_message.split(' ')):
