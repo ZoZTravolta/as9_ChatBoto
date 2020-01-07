@@ -23,27 +23,3 @@ boto_notUnderstand = ["Sorry can you speak English?", "Did you smoke something?"
                       "I have no idea what you are talking about. Try to ask me question like...:", ]
 
 
-# USER_MEAN = ["I thought you'd be more fun", "This sucks", "Do you have nothing else to say",
-#              "KK", "Anything else to say?", "You've already said that", "And what"]
-# HURT_BOT = ["Look, I'm sorry you're bored, I'm a basic chatbot created by some 26 year old. Please be gentle with me",
-#             "You don't have to be mean! Robots have feelings too.", "Oi! Don't be so aggressive.", "YOLO"]
-
-# # if user thinks robot is being mean
-# USER_HURT = ["rude", "relax", "mean", "fisty one today Robo"]
-# BOT_APOLOGY = ["why you so sensitive, LMAO", "grow up, real life will be like this",
-#                "I apologize, can we move on?", "Lets be friends please"]
-
-# # if user wants to move on
-# USER_CONVO = ["sorry", "yes", "nothing new",
-#               "no gossip", "that's fun", "im good", "good", "ok"]
-# BOT_CONVO_ANSWER = ["Ok moving on, what do you want to talk about now?",
-#                     "Can we move to the next topic please?", "Yalla, Yalla"]
-
-# # if user response is yes or no
-# YES_NO = ["yes", "no", "yep", "yup", "nope"]
-# BOT_YES_NO = ["But like same though, let's talk about something else",
-#               "I feel the exact same way! Ask me to do something robots do", "I can do cool things too you know"]
-
-# # if user asks a question
-# USER_QUESTIONMARK = ["That's pretty personal",
-#                      "How would you feel if I asked you a question like that?", "That's too deep", "I have my limits!"]
